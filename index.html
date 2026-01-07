@@ -1,38 +1,98 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Million's world</title>
+  <title>Press Start</title>
+
+  <!-- Pixel font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(#f6c1ff, #cce7ff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Press Start 2P', monospace;
+    }
+
+    /* GAME SCREEN */
+    .screen {
+      position: relative;
+      width: 700px;
+      height: 400px;
+      background: #3bb3ff;
+      border: 8px solid #222;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.3);
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    /* YOUR IMAGE */
+       
+    
+    .character {
+      position: absolute;
+      top: -90px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120px;
+    }
+
+    h1 {
+      color: #000;
+      margin-bottom: 40px;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    button {
+      font-family: 'Press Start 2P', monospace;
+      font-size: 14px;
+      padding: 15px 25px;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .start {
+      background: #ff5fa2;
+      color: white;
+    }
+
+  </style>
 </head>
 
-<body style="background-color: lightpink;">
+<body>
 
-  <h1 style="color: black;">
-    <i>Hello everyone</i>
-  </h1>
+  <div class="screen">
 
-  <br>
+    <!-- 👇 PUT YOUR IMAGE HERE -->
+    <img src="images/me.png" class="character" alt="Me">
 
-  <p style="font-size: 25px;">
-    Hi, I am <b>Million</b>. If you do not know about me, stop taking this.
-    Just kidding. I hope you enjoy this as much as I do.
-  </p>
+    <h1>PRESS START</h1>
 
-  <br>
+    <div class="buttons">
+      <button class="start">START</button>
+      <button class="apply">APPLY</button>
+    </div>
 
-  <h2 style="color: #132440;">
-    Fun fact: I can eat Shan noodles every single day
-  </h2>
-
-  <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExZG96NWwzbWRjMGoyNXl3cjltMmpybThxOGJ1bGh6d3JrZ3Q1Y2J0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/SoSgeRKy0lq3nvPVK9/giphy.gif"
-   <br><br>
+  </div>
 
 
-   
 
-  <!-- ✅ WORKING LINK -->
-  <a href="page2.html">👉 Go to Page 2</a>
 
-   
+
+            <a href="page4.html" class="next">➡ next </a>
 
 </body>
 </html>
+
+
+  
